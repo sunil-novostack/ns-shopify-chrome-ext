@@ -1,0 +1,20 @@
+{
+    "background": {
+      "scripts": [ "js_libraries/jquery-3.4.1.min.js", "js_bg/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "resource/img/grocery-cart-128.png",
+      "default_popup": "popup/popup.html"
+   },
+   "description": "Works with the NS Shopify Sales hub to extract products from varius ecommerce platoform from their single product page",
+   "icons": {
+      "128": "resource/img/grocery-cart-128.png",
+      "16": "resource/img/grocery-cart-16.png",
+      "48": "resource/img/grocery-cart-64.png"
+   },
+   "manifest_version": 2,
+   "name": "NS Shopify Importer",
+   "permissions": [ "storage", "tabs" ],
+   "version": "1.0.0",
+   "web_accessible_resources": [ "/html/auth_form.html", "/html/popup_in.html", "/html/import-product.html", "/html/product-success.html", "/html/product-failed.html" ]
+}

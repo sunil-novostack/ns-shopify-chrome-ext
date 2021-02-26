@@ -1,0 +1,135 @@
+var allStates = {
+    'Australia': {
+      'NSW': 'New South Wales',
+      'ACT': 'Australian Capital Territory',
+      'SA': 'South Australia',
+      'VIC': 'Victoria',
+      'NT': 'Northern Territory',
+      'WA': 'Western Australia',
+      'QLD': 'Queensland',
+      'TAS': 'Tasmania'
+    },
+    'Germany':{
+      'BB': 'Brandenburg',
+      'HB': 'Bremen',
+      'BE': 'Berlin',
+      'BW': 'Baden-Wurttemberg',
+      'MV': 'Mecklenburg-Vorpommern',
+      'NW': 'Nordrhein-Westfalen',
+      'HE': 'Hessen',
+      'NI': 'Niedersachsen',
+      'HH': 'Hamburg',
+      'SH': 'Schleswig-Holstein',
+      'BY': 'Bayern',
+      'ST': 'Sachsen-Anhalt',
+      'RP': 'Rheinland-Pfalz',
+      'TH': 'Thuringia',
+      'SL': 'Saarland',
+      'SN': 'Sachsen'
+    },
+    'New Zealand':{
+      'NL':	'Northland',
+      'WE':	'Wellington',
+      'GI':	'Gisborne',
+      'AK':	'Auckland',
+      'HB':	"Hawkes's Bay",
+      'CT':	'Canterbury',
+      'MW':	'Manawatu-Wanganui',
+      'NS':	'Nelson',
+      'MB':	'Marlborough',
+      'OT':	'Otago',
+      'SL':	'Southland',
+      'WA':	'Waikato',
+      'TM':	'Tasman',
+      'BP':	'Bay of Plenty',
+      'TK': 'Taranaki',
+      'WC':	'West Coast'
+    },
+    'United States':{
+      'AZ':	'Arizona',
+      'AL':	'Alabama',
+      'DE':	'Delaware',
+      'AS':	'American Samoa',
+      'CO':	'Colorado',
+      'AR':	'Arkansas',
+      'DC':	'District of Columbia',
+      'AK':	'Alaska',
+      'CT':	'Connecticut',
+      'ME':	'Maine',
+      'KY':	'Kentucky',
+      'MI':	'Michigan',
+      'HI':	'Hawaii',
+      'GA':	'Georgia',
+      'KS':	'Kansas',
+      'IA':	'Iowa',
+      'FL':	'Florida',
+      'MS':	'Mississippi',
+      'MT':	'Montana',
+      'IN':	'Indiana',
+      'CA':	'California',
+      'GU':	'Guam',
+      'MA':	'Massachusetts',
+      'IL':	'Illinois',
+      'MD':	'Maryland',
+      'ID':	'Idaho',
+      'MO':	'Missouri',
+      'MP':	'Northern Mariana Islands',
+      'ND':	'North Dakota',
+      'LA':	'Louisiana',
+      'NE':	'Nebraska',
+      'NJ':	'New Jersey',
+      'MN':	'Minnesota',
+      'NC':	'North Carolina',
+      'NH':	'New Hampshire',
+      'NV':	'Nevada',
+      'NY':	'New York',
+      'PR':	'Puerto Rico',
+      'NM':	'New Mexico',
+      'PA':	'Pennsylvania',
+      'OH':	'Ohio',
+      'TN':	'Tennessee',
+      'VI':	'Virgin Islands of the U.S.',
+      'SC':	'South Carolina',
+      'RI':	'Rhode Island',
+      'OK':	'Oklahoma',
+      'TX':	'Texas',
+      'UM':	'U.S. Minor Outlying Islands',
+      'WY':	'Wyoming',
+      'OR':	'Oregon',
+      'UT':	'Utah',
+      'SD':	'South Dakota',
+      'VT':	'Vermont',
+      'VA':	'Virginia',
+      'WV':	'West Virginia',
+      'WI':	'Wisconsin',
+      'WA':	'Washington'
+    },
+    'Canada':{
+      'NU':	'Nunavut',
+      'PE':	'Prince Edward Island',
+      'NL':	'Newfoundland and Labrador',
+      'AB':	'Alberta',
+      'NB':	'New Brunswick',
+      'NS':	'Nova Scotia',
+      'BC':	'British Columbia',
+      'QC':	'Quebec',
+      'MB':	'Manitoba',
+      'YT':	'Yukon',
+      'SK':	'Saskatchewan',
+      'ON':	'Ontario',
+      'NT':	'Northwest Territories'
+    }
+};
+
+function getStateName (country, stateCode) {
+  if (allStates.hasOwnProperty(country)){
+    if (allStates[country].hasOwnProperty(stateCode)) {
+        console.log(allStates[country][stateCode]);
+        return allStates[country][stateCode];
+    } else {
+        return stateCode;
+    }
+  }else{
+    return stateCode;
+  }
+}
