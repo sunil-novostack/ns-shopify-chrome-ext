@@ -12,8 +12,8 @@
    },
    "content_scripts": [
       {
-         "js": [ "js_libraries/jquery-3.4.1.min.js" ],
-         "matches": ["*://*.walmart.com/*","*://*.samsclub.com/*","*://*.ebay.com/*"]
+         "js": [ "js_libraries/jquery-3.4.1.min.js","js_content/functions.js" ],
+         "matches": ["*://*.walmart.com/*"]
       }
    ],
    "description": "Works with the NS Shopify Sales hub to extract products from varius ecommerce platoform from their single product page",
@@ -25,5 +25,6 @@
    "manifest_version": 2,
    "name": "NS Shopify Importer",
    "permissions": [ "storage", "tabs" ],
-   "version": "1.0.0"
+   "version": "1.0.0",
+   "web_accessible_resources": [ "/html/popup_in.html"]
 }

@@ -1,0 +1,212 @@
+
+<style>
+
+div#top-lighthouse {
+    margin-top: 63px;
+}
+
+#ns_sce_toolbar{
+	position:fixed;
+	background:#0082cb;
+	width:100%;
+	top:0;
+	left:0;
+	z-index:99999999999;
+	font-family:sans-serif!important;
+  letter-spacing:.5px;
+}
+
+.ns_sce_logo {
+    float: left;
+    margin-left: 7%;
+    color: #fff;
+    margin-top:9px;
+}
+
+.ns_sce_logo span{
+    float:right;
+}
+
+.ns_sce_logo a{
+    color:#fff;
+}
+
+.ns_sce_logo a:hover{
+    color:#fff;
+    text-decoration:none;
+}
+
+.ae_toolbar select,
+select#ae_categories {
+    padding: 6px 10px;
+    font-family:sans-serif;
+    border:none;
+    margin-left:2px;
+    outline:none;
+}
+
+.ae_toolbar label,
+.ae_toolbar input,
+.ae_toolbar select,
+select#ae_categories{
+	float:left;
+}
+
+.ae_toolbar input,
+.ae_toolbar select{
+	padding:10px;
+}
+
+::placeholder {
+	color:#000;
+	font-family:sans-serif;
+}
+
+#ns_sce_import_button,
+#ns_sce_disconnect_button,
+#ns_sce_update_product {
+    color: #fff;
+    cursor:pointer;
+    border: 1px solid #fff!important;
+    font-family: sans-serif;
+    box-shadow: none!important;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: all .2s ease;
+    transition: all .2s ease;
+    margin-top: 5px;
+    margin-left: 10px;
+    outline: none;
+    float: right;
+    margin-right: 7%;
+    border-radius: 5px;
+    background-color: #0082cb;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a6ff', endColorstr='#00a6ff', GradientType=0 );
+    transition:all .7s ease;
+}
+
+
+/*#ae_import_button:hover,
+#ae_disconnect_button:hover{
+	background:#65646a;
+    transition:all .7s ease;
+}*/
+
+.connect-input:focus{
+	outline:none;
+	transition:all .2s ease;
+}
+
+span#ae_woo_url {
+    font-weight: bold;
+    margin-top: 27px;
+    float: left;
+    margin-left: 10px;
+    color: #0082cb;
+    font-size: 1.3em;
+}
+
+select#ae_categories {
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.ns_sce_loader {
+    border: 20px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 18px solid #0082cb;
+    position:fixed;
+    margin-top:-50px;
+    margin-left:-50px;
+    top:50%;
+    left:50%;
+    z-index:9999999999999999999;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#ae_loader_overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  cursor: pointer;
+  z-index:999999999;
+  visibility:hidden;
+}
+
+#ae_by_opmc {
+    font-size: 11px;
+    margin-left: 7px;
+    margin-top: 2px;
+}
+
+div#ae_help_button {
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    float: left;
+    height: -webkit-fill-available;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px 8px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 8px;
+    cursor:pointer;
+}
+
+#ae_help_button_modal {
+    background: #0082cb;
+    position: fixed;
+    float: left;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+    padding: 30px;
+    font-size: 1.1em;
+    margin-top: 80px;
+    color:#fff;
+    display:none;
+    z-index:999;
+}
+
+div#ae_help_button_modal li{
+  display: circle;
+}
+
+div#ae_help_button_modal_background {
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:none;
+    z-index:9;
+}
+
+</style>
+<div id="ae_loader_overlay">
+    <div class="ae_loader"></div>
+</div>
+
+<div id="ns_sce_toolbar">
+    <div class="ns_sce_logo">
+    	<h3>Shopify Sales Hub <span id="ae_by_opmc">by <a target="_blank" href="https://opmc.com.au/">SSH</a></span></h3>
+    </div>
+    <button id="ns_sce_import_button">Add Product</button>
+</div>
